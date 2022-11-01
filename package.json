@@ -1,9 +1,12 @@
 {
+  "homepage": "http://Folajimmie.github.io/real-estate",
   "name": "move-real-estate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -24,6 +27,7 @@
   },
   "devDependencies": {
     "eslint": "8.18.0",
-    "eslint-config-next": "12.2.0"
+    "eslint-config-next": "12.2.0",
+    "gh-pages": "^4.0.0"
   }
 }
